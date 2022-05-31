@@ -5,8 +5,8 @@ const server = express();
 server.use(cors());
 server.use(express.json());
 
-const dogRoutes = require('./controllers/dogs');
-server.use('/dogs', dogRoutes);
+const postsRoutes = require('./controllers/posts');
+server.use('/posts', postsRoutes);
 
 // Root route
 server.get('/', (req, res) => res.send('Hello, client!'));
