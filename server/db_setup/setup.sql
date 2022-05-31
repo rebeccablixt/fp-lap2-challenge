@@ -7,5 +7,5 @@ CREATE TABLE UserPost(
     title VARCHAR (50) NOT NULL
 );
 COPY UserPost
-FROM $str$/../data/posts.csv$str$
+FROM $str$/code/server/data/posts.csv$str$
 DELIMITER ',' CSV HEADER;
